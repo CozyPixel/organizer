@@ -18,3 +18,17 @@ Install Python from [python.org](https://www.python.org/).
 2. Open it in a text editor and replace `'YourUsername'` with your actual Windows account name:
 ```python
 DOWNLOADS_DIR = r'C:\Users\YourUsername\Downloads'
+
+## ⚙️ How to set up Auto-Run (Windows)
+
+If you want Windows to clean up your Downloads folder automatically every time you turn on your PC:
+
+1. Press the **Win** key and type `Task Scheduler`. Open it.
+2. In the right panel, click **Create Basic Task...**
+3. **Name:** Enter `Downloads Organizer` and click *Next*.
+4. **Trigger:** Select **When I log on** and click *Next*.
+5. **Action:** Select **Start a program** and click *Next*.
+6. **Program/script:** Click *Browse* and select your `organizer.py` file.
+7. Click *Next* and then *Finish*.
+
+Now, the script will run silently in the background every time you start your computer!
